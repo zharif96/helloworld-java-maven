@@ -4,7 +4,7 @@
   <groupId>com.scmgalaxy.mavensample</groupId>
   <artifactId>yoodle</artifactId>
   <packaging>jar</packaging>
-  <version>215.1.1</version>
+  <version>215</version>
   <name>my-maven</name>
   <url>http://maven.apache.org</url>
 	
