@@ -42,12 +42,12 @@
     <repository>
         <id>ravi</id>
         <name>release softx</name>
-        <url>http://13.233.138.64:8081/repository/rajesh-maven-hosted/</url>
+        <url>http://13.233.93.36:8081/artifactory/dhlall</url>
     </repository>
     <snapshotRepository>
         <id>ravi</id>
         <name>snapshot softx</name>
-        <url>http://13.233.138.64:8081/repository/rajesh-maven-snap-hosted/</url>
+        <url>http://13.233.93.36:8081/artifactory/dhlall</url>
     </snapshotRepository>
 </distributionManagement>
 
