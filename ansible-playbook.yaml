@@ -1,0 +1,21 @@
+---
+- name: Update web servers
+  hosts: web
+
+  tasks:
+  - name: Install Apache in centos7
+    ansible.builtin.yum:
+      name: httpd
+      state: latest
+  - name: Copy index.html
+    ansible.builtin.copy:
+      src: index.html
+      dest: /var/www/html/index.html
+  - name: Copy jar file
+    ansible.builtin.copy:
+      src: target/*.jar
+      dest: /var/www/html/
+  - name: Starting a Apache Server
+    ansible.builtin.service:
+      name: httpd
+      state: started
