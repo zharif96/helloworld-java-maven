@@ -13,8 +13,12 @@
       dest: /var/www/html/index.html
   - name: Copy jar file
     ansible.builtin.copy:
-      src: target/*.jar
-      dest: /var/www/html/
+      src: target/yoodle-215.jar
+      dest: /var/www/html/yoodle-215.jar
+  - name: Copy jar file
+    ansible.builtin.copy:
+      src: target/yoodle-215-javadoc.jar
+      dest: /var/www/html/yoodle-215-javadoc.jar
   - name: Starting a Apache Server
     ansible.builtin.service:
       name: httpd
